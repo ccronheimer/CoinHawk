@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B0A78B226D31012004A0708 /* CoinHawkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A78B126D31012004A0708 /* CoinHawkApp.swift */; };
+		6B0A78B426D31012004A0708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A78B326D31012004A0708 /* ContentView.swift */; };
+		6B0A78B626D31014004A0708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B0A78B526D31014004A0708 /* Assets.xcassets */; };
+		6B0A78B926D31014004A0708 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B0A78B826D31014004A0708 /* Preview Assets.xcassets */; };
+		6B0A78C426D31014004A0708 /* CoinHawkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A78C326D31014004A0708 /* CoinHawkTests.swift */; };
+		6B0A78CF26D31014004A0708 /* CoinHawkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A78CE26D31014004A0708 /* CoinHawkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B0A78C026D31014004A0708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B0A78A626D31012004A0708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B0A78AD26D31012004A0708;
+			remoteInfo = CoinHawk;
+		};
+		6B0A78CB26D31014004A0708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B0A78A626D31012004A0708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B0A78AD26D31012004A0708;
+			remoteInfo = CoinHawk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B0A78AE26D31012004A0708 /* CoinHawk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinHawk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0A78B126D31012004A0708 /* CoinHawkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHawkApp.swift; sourceTree = "<group>"; };
+		6B0A78B326D31012004A0708 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B0A78B526D31014004A0708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B0A78B826D31014004A0708 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B0A78BA26D31014004A0708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B0A78BF26D31014004A0708 /* CoinHawkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinHawkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0A78C326D31014004A0708 /* CoinHawkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHawkTests.swift; sourceTree = "<group>"; };
+		6B0A78C526D31014004A0708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B0A78CA26D31014004A0708 /* CoinHawkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinHawkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0A78CE26D31014004A0708 /* CoinHawkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHawkUITests.swift; sourceTree = "<group>"; };
+		6B0A78D026D31014004A0708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B0A78AB26D31012004A0708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0A78BC26D31014004A0708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0A78C726D31014004A0708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B0A78A526D31012004A0708 = {
+			isa = PBXGroup;
+			children = (
+				6B0A78B026D31012004A0708 /* CoinHawk */,
+				6B0A78C226D31014004A0708 /* CoinHawkTests */,
+				6B0A78CD26D31014004A0708 /* CoinHawkUITests */,
+				6B0A78AF26D31012004A0708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B0A78AF26D31012004A0708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B0A78AE26D31012004A0708 /* CoinHawk.app */,
+				6B0A78BF26D31014004A0708 /* CoinHawkTests.xctest */,
+				6B0A78CA26D31014004A0708 /* CoinHawkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B0A78B026D31012004A0708 /* CoinHawk */ = {
+			isa = PBXGroup;
+			children = (
+				6B0A78B126D31012004A0708 /* CoinHawkApp.swift */,
+				6B0A78B326D31012004A0708 /* ContentView.swift */,
+				6B0A78B526D31014004A0708 /* Assets.xcassets */,
+				6B0A78BA26D31014004A0708 /* Info.plist */,
+				6B0A78B726D31014004A0708 /* Preview Content */,
+			);
+			path = CoinHawk;
+			sourceTree = "<group>";
+		};
+		6B0A78B726D31014004A0708 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6B0A78B826D31014004A0708 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B0A78C226D31014004A0708 /* CoinHawkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B0A78C326D31014004A0708 /* CoinHawkTests.swift */,
+				6B0A78C526D31014004A0708 /* Info.plist */,
+			);
+			path = CoinHawkTests;
+			sourceTree = "<group>";
+		};
+		6B0A78CD26D31014004A0708 /* CoinHawkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B0A78CE26D31014004A0708 /* CoinHawkUITests.swift */,
+				6B0A78D026D31014004A0708 /* Info.plist */,
+			);
+			path = CoinHawkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B0A78AD26D31012004A0708 /* CoinHawk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B0A78D326D31014004A0708 /* Build configuration list for PBXNativeTarget "CoinHawk" */;
+			buildPhases = (
+				6B0A78AA26D31012004A0708 /* Sources */,
+				6B0A78AB26D31012004A0708 /* Frameworks */,
+				6B0A78AC26D31012004A0708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinHawk;
+			productName = CoinHawk;
+			productReference = 6B0A78AE26D31012004A0708 /* CoinHawk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B0A78BE26D31014004A0708 /* CoinHawkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B0A78D626D31014004A0708 /* Build configuration list for PBXNativeTarget "CoinHawkTests" */;
+			buildPhases = (
+				6B0A78BB26D31014004A0708 /* Sources */,
+				6B0A78BC26D31014004A0708 /* Frameworks */,
+				6B0A78BD26D31014004A0708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B0A78C126D31014004A0708 /* PBXTargetDependency */,
+			);
+			name = CoinHawkTests;
+			productName = CoinHawkTests;
+			productReference = 6B0A78BF26D31014004A0708 /* CoinHawkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B0A78C926D31014004A0708 /* CoinHawkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B0A78D926D31014004A0708 /* Build configuration list for PBXNativeTarget "CoinHawkUITests" */;
+			buildPhases = (
+				6B0A78C626D31014004A0708 /* Sources */,
+				6B0A78C726D31014004A0708 /* Frameworks */,
+				6B0A78C826D31014004A0708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B0A78CC26D31014004A0708 /* PBXTargetDependency */,
+			);
+			name = CoinHawkUITests;
+			productName = CoinHawkUITests;
+			productReference = 6B0A78CA26D31014004A0708 /* CoinHawkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B0A78A626D31012004A0708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6B0A78AD26D31012004A0708 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					6B0A78BE26D31014004A0708 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6B0A78AD26D31012004A0708;
+					};
+					6B0A78C926D31014004A0708 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6B0A78AD26D31012004A0708;
+					};
+				};
+			};
+			buildConfigurationList = 6B0A78A926D31012004A0708 /* Build configuration list for PBXProject "CoinHawk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B0A78A526D31012004A0708;
+			productRefGroup = 6B0A78AF26D31012004A0708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B0A78AD26D31012004A0708 /* CoinHawk */,
+				6B0A78BE26D31014004A0708 /* CoinHawkTests */,
+				6B0A78C926D31014004A0708 /* CoinHawkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B0A78AC26D31012004A0708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0A78B926D31014004A0708 /* Preview Assets.xcassets in Resources */,
+				6B0A78B626D31014004A0708 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0A78BD26D31014004A0708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0A78C826D31014004A0708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B0A78AA26D31012004A0708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0A78B426D31012004A0708 /* ContentView.swift in Sources */,
+				6B0A78B226D31012004A0708 /* CoinHawkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0A78BB26D31014004A0708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0A78C426D31014004A0708 /* CoinHawkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0A78C626D31014004A0708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0A78CF26D31014004A0708 /* CoinHawkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B0A78C126D31014004A0708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B0A78AD26D31012004A0708 /* CoinHawk */;
+			targetProxy = 6B0A78C026D31014004A0708 /* PBXContainerItemProxy */;
+		};
+		6B0A78CC26D31014004A0708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B0A78AD26D31012004A0708 /* CoinHawk */;
+			targetProxy = 6B0A78CB26D31014004A0708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B0A78D126D31014004A0708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B0A78D226D31014004A0708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B0A78D426D31014004A0708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoinHawk/Preview Content\"";
+				DEVELOPMENT_TEAM = QG72F67B5X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoinHawk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameroncronheimer.CoinHawk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B0A78D526D31014004A0708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoinHawk/Preview Content\"";
+				DEVELOPMENT_TEAM = QG72F67B5X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoinHawk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameroncronheimer.CoinHawk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B0A78D726D31014004A0708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG72F67B5X;
+				INFOPLIST_FILE = CoinHawkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameroncronheimer.CoinHawkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinHawk.app/CoinHawk";
+			};
+			name = Debug;
+		};
+		6B0A78D826D31014004A0708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG72F67B5X;
+				INFOPLIST_FILE = CoinHawkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameroncronheimer.CoinHawkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinHawk.app/CoinHawk";
+			};
+			name = Release;
+		};
+		6B0A78DA26D31014004A0708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG72F67B5X;
+				INFOPLIST_FILE = CoinHawkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameroncronheimer.CoinHawkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinHawk;
+			};
+			name = Debug;
+		};
+		6B0A78DB26D31014004A0708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG72F67B5X;
+				INFOPLIST_FILE = CoinHawkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameroncronheimer.CoinHawkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinHawk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B0A78A926D31012004A0708 /* Build configuration list for PBXProject "CoinHawk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B0A78D126D31014004A0708 /* Debug */,
+				6B0A78D226D31014004A0708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B0A78D326D31014004A0708 /* Build configuration list for PBXNativeTarget "CoinHawk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B0A78D426D31014004A0708 /* Debug */,
+				6B0A78D526D31014004A0708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B0A78D626D31014004A0708 /* Build configuration list for PBXNativeTarget "CoinHawkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B0A78D726D31014004A0708 /* Debug */,
+				6B0A78D826D31014004A0708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B0A78D926D31014004A0708 /* Build configuration list for PBXNativeTarget "CoinHawkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B0A78DA26D31014004A0708 /* Debug */,
+				6B0A78DB26D31014004A0708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B0A78A626D31012004A0708 /* Project object */;
+}
