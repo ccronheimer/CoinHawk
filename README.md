@@ -1,3 +1,3 @@
-# CoinHawk
+### CoinHawk
 
 Test
