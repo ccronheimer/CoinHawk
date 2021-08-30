@@ -39,8 +39,8 @@ struct HomeView: View {
                 
                 if !showPortfolio {
                     allCoinsList
-                        .transition(.move(edge: .leading))
-
+                       .transition(.move(edge: .leading))
+                
                 }
                 
                 if showPortfolio {
@@ -88,7 +88,6 @@ extension HomeView {
                     if showPortfolio {
                         showPortfolioView.toggle()
                     }
-                    
                 }
                 .background(
                     CircleButtonAnimationView(animate: $showPortfolio)
@@ -104,6 +103,7 @@ extension HomeView {
         
             
             Spacer()
+            
             CircleButtonView(iconName: "chevron.right")
                 .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
                 .onTapGesture {
@@ -116,6 +116,7 @@ extension HomeView {
     }
     
     private var allCoinsList: some View {
+        
         List {
             ForEach(vm.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: false)
@@ -128,6 +129,7 @@ extension HomeView {
         }
         .listStyle(PlainListStyle())
     }
+    
     
     private var portfolioCoinsList: some View {
         List {
@@ -143,6 +145,7 @@ extension HomeView {
         .listStyle(PlainListStyle())
     }
     
+   
     private var portfolioEmptyText: some View {
         Text("You haven't added any coins to your portfolio yet! Click the + button to get started! 🧐")
             .font(.callout)
@@ -171,6 +174,8 @@ extension HomeView {
             }
         
             Spacer()
+            Text("7 day chart")
+           
             
             if(showPortfolio) {
                 HStack(spacing: 4) {
@@ -211,5 +216,51 @@ extension HomeView {
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
         .padding(.horizontal)
+    }
+}
+
+struct RefreshableScrollView<Content: View>: UIViewRepresentable {
+  
+    var content: Content
+    var onRefresh: () -> ()
+    
+    init(@ViewBuilder content: @escaping ()-> Content, onRefresh: @escaping () -> ()) {
+        self.content = content()
+        self.onRefresh = onRefresh
+    }
+    
+    func makeUIView(context: Context) -> UIScrollView {
+        
+        let uiScrollView = UIScrollView()
+        
+        // Extracting SwiftUI View....
+        let hostView = UIHostingController(rootView: content)
+        
+        // Were going to constraints System from UIKit..
+        // so that no need of width and height calculations...
+        hostView.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Clipping the swiftUI view to UIKit View...
+        let constraints = [
+            
+            // Four Corners...
+            hostView.view.topAnchor.constraint(equalTo: uiScrollView.topAnchor),
+            hostView.view.bottomAnchor.constraint(equalTo: uiScrollView.bottomAnchor),
+            hostView.view.leadingAnchor.constraint(equalTo: uiScrollView.leadingAnchor),
+            hostView.view.trailingAnchor.constraint(equalTo: uiScrollView.trailingAnchor),
+            
+            // Size...
+            hostView.view.widthAnchor.constraint(equalTo: uiScrollView.widthAnchor),
+            hostView.view.heightAnchor.constraint(equalTo: uiScrollView.heightAnchor),
+        ]
+        
+        uiScrollView.addConstraints(constraints)
+        uiScrollView.addSubview(hostView.view)
+        
+        return uiScrollView
+    }
+    
+    func updateUIView(_ uiView: UIScrollView, context: Context) {
+        
     }
 }

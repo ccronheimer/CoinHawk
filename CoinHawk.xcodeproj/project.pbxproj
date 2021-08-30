@@ -21,6 +21,7 @@
 		6B0C23C826D8812100A2ABF9 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C23C726D8812100A2ABF9 /* CoinDetailModel.swift */; };
 		6B0C23CD26D883B200A2ABF9 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C23CC26D883B200A2ABF9 /* DetailViewModel.swift */; };
 		6B0C23D226D883ED00A2ABF9 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C23D126D883ED00A2ABF9 /* CoinDetailDataService.swift */; };
+		6BB567B926DB1F1A00323EAB /* WeeklyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB567B826DB1F1A00323EAB /* WeeklyChartView.swift */; };
 		6BB9D16826D96B3700360708 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9D16726D96B3700360708 /* ChartView.swift */; };
 		6BB9D16D26D97F2B00360708 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9D16C26D97F2B00360708 /* Date.swift */; };
 		6BB9D17526D9D79100360708 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9D17426D9D79100360708 /* String.swift */; };
@@ -89,6 +90,7 @@
 		6B0C23C726D8812100A2ABF9 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		6B0C23CC26D883B200A2ABF9 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		6B0C23D126D883ED00A2ABF9 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		6BB567B826DB1F1A00323EAB /* WeeklyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChartView.swift; sourceTree = "<group>"; };
 		6BB9D16726D96B3700360708 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		6BB9D16C26D97F2B00360708 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		6BB9D17426D9D79100360708 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				6BFBE0BD26D48F5B004337D6 /* HomeStatsView.swift */,
 				6BFBE04A26D34134004337D6 /* CoinRowView.swift */,
 				6B0C238E26D5CC4800A2ABF9 /* PortfolioView.swift */,
+				6BB567B826DB1F1A00323EAB /* WeeklyChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -382,6 +385,8 @@
 			dependencies = (
 			);
 			name = CoinHawk;
+			packageProductDependencies = (
+			);
 			productName = CoinHawk;
 			productReference = 6B0A78AE26D31012004A0708 /* CoinHawk.app */;
 			productType = "com.apple.product-type.application";
@@ -453,6 +458,8 @@
 				Base,
 			);
 			mainGroup = 6B0A78A526D31012004A0708;
+			packageReferences = (
+			);
 			productRefGroup = 6B0A78AF26D31012004A0708 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -512,6 +519,7 @@
 				6BFBE07E26D40471004337D6 /* CoinImageView.swift in Sources */,
 				6B0A78B226D31012004A0708 /* CoinHawkApp.swift in Sources */,
 				6BFBE0A326D4859E004337D6 /* UIApplication.swift in Sources */,
+				6BB567B926DB1F1A00323EAB /* WeeklyChartView.swift in Sources */,
 				6BFBE03826D3236B004337D6 /* CircleButtonView.swift in Sources */,
 				6BFBE02126D3201F004337D6 /* Color.swift in Sources */,
 				6B0C23C026D8736300A2ABF9 /* DetailView.swift in Sources */,

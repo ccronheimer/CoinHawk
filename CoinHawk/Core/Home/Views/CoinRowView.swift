@@ -17,8 +17,14 @@ struct CoinRowView: View {
             
             leftColumn
             Spacer()
+                
             if showHoldingsColumn {
                 centerColumn
+                    .frame(width: 75)
+            } else {
+                WeeklyChartView(coin: coin)
+                    .frame(width: 75)
+                    
             }
             rightColumn
         }
@@ -35,6 +41,9 @@ struct CoinRowView_Previews: PreviewProvider {
             CoinRowView(coin: dev.coin, showHoldingsColumn: true)
                 .previewLayout(.sizeThatFits)
             
+            CoinRowView(coin: dev.coin, showHoldingsColumn: false)
+                .previewLayout(.sizeThatFits)
+            
             CoinRowView(coin: dev.coin, showHoldingsColumn: true)
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
@@ -49,18 +58,57 @@ extension CoinRowView {
     private var leftColumn: some View {
         
         HStack(spacing: 0){
-            Text(" \(coin.rank)")
-                .font(.caption)
-                .foregroundColor(Color.theme.secondaryText)
-                .frame(minWidth: 30)
             
             CoinImageView(coin: coin)
                 .frame(width: 30, height: 30)
+                .padding(10)
             
-            Text(coin.symbol.uppercased())
-                .font(.headline)
-                .padding(.leading, 6)
-                .foregroundColor(Color.theme.accent)
+            VStack(alignment: .leading, spacing: 5){
+                Text(coin.name)
+                    .font(.headline)
+                    .foregroundColor(Color.theme.accent)
+                    
+                
+                HStack() {
+                    
+                    HStack(spacing: 4) {
+                        Text("\(coin.rank)")
+                            .font(.caption)
+                            .foregroundColor(Color.theme.secondaryText)
+                            .padding(.horizontal, 5)
+                            .background(RoundedRectangle(cornerRadius: 2).foregroundColor(Color(.systemGray5)))
+                   
+                    Text(coin.symbol.uppercased())
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.theme.secondaryText)
+                    }
+                        
+                    HStack(spacing: 4) {
+                    if coin.priceChangePercentage24H ?? 0 >= 0 {
+                        Image(systemName: "arrowtriangle.up.fill")
+                            .font(.caption)
+                            .foregroundColor(Color.theme.green)
+                    } else {
+                        Image(systemName: "arrowtriangle.down.fill")
+                            .font(.caption)
+                            .foregroundColor(Color.theme.red)
+                    }
+                   
+                    
+                    Text(coin.priceChangePercentage24H?.asPercentString() ?? "")
+                        .foregroundColor(
+                            (coin.priceChangePercentage24H ?? 0) >= 0 ?
+                            Color.theme.green : Color.theme.red
+                        )
+                        .font(.caption)
+                    }
+                    
+                }
+               
+            }
+            
+           
         }
     }
     
@@ -80,12 +128,9 @@ extension CoinRowView {
             Text(coin.currentPrice.asCurrencyWith6Decimals())
                 .bold()
                 .foregroundColor(Color.theme.accent)
-            Text(coin.priceChangePercentage24H?.asPercentString() ?? "")
-                .foregroundColor(
-                    (coin.priceChangePercentage24H ?? 0) >= 0 ?
-                    Color.theme.green : Color.theme.red
-                )
+           
         }
         .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
     }
 }
+

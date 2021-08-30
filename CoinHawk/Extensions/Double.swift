@@ -33,7 +33,6 @@ extension Double {
         let number = NSNumber(value: self)
         return currencyFormatter2.string(from: number) ?? "$0.00"
     }
-
     
     /// Converts a Double into a Currency with 2-6 decimal places
     /// ```
